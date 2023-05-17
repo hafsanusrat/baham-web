@@ -25,7 +25,7 @@ def view_aboutus(request):
 
 def view_vehicles(request):
     template = loader.get_template('vehicles.html')
-    vehicles = VehicleModel.objects.all().order_by('vendor')
+    vehicles = VehicleModel.objects.all().filter(isvoided=False).order_by('vendor')
     context = {
         'navbar': 'vehicles',
         'vehicles': vehicles
