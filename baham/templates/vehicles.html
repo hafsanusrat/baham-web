@@ -26,14 +26,15 @@
                     <td>0</td>
                     <td>
                         <button class="btn btn-warning">Edit</button>
-                        <button class="btn btn-danger" disabled="disabled">Delete</button>
+                        <a class="btn btn-danger" href="{% url 'veh_delete' vehicle.model_id %}">Delete</a>
                     </td>
                 </tr>
             {% endfor %}
         </table>
         <a class="btn btn-success" href="{% url 'createvehicle' %}">Add yours</a>
     </div> <!-- /container -->
-
+    
+   
 </main>
 
 {% include 'footer.html' %}
