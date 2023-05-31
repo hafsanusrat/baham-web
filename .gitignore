@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
+noorenv/
 develop-eggs/
 dist/
 downloads/
@@ -130,3 +131,6 @@ dmypy.json
 
 # IDE
 .idea/
+media/pictures/1.jpeg
+media/pictures/2.jpeg
+media/pictures/2_oynOcdQ.jpeg
